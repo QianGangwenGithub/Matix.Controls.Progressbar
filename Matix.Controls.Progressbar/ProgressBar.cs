@@ -31,7 +31,7 @@ namespace Matix.Controls.Progressbar
 
             // Calculate area for drawing the progress.
             //rect.Width = (int)((float)rect.Width * percent);
-            rect =  SplitRectangle(rect, this.FillDirection, percent);
+            rect =  SplitRectangle(rect, this.FillDirection, percent*100);
             // Draw the progress meter.
             g.FillRectangle(brush, rect);
 
